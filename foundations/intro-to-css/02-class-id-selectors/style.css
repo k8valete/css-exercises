@@ -8,12 +8,17 @@
   font-size: 36px;
 }
 
-.third {
+/* .third {
   font-size: 24px;
-}
+} */
 
 #fourth {
   background-color: rgb(144, 238, 144);
-  font-size: 24px;
+  /* font-size: 24px; */
   font-weight: bold;
+}
+
+/* eliminate redundancy above by creating a new class that is added to the styling of the elements */
+.adjust-font-size {
+  font-size: 24px;
 }
