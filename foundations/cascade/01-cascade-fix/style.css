@@ -8,16 +8,18 @@ body {
   font-weight: 800;
 }
 
+/* moved this selector from below .small-para class selector so that the rules in .small-para apply to the second paragraph element instead of the rules in .para (which has the same level of specificity) */
+.para {
+  font-size: 22px;
+}
+
 .small-para {
   font-size: 14px;
   font-weight: 800;
 }
 
-.para {
-  font-size: 22px;
-}
-
-.confirm {
+/* changed from .confirm class to #confirm-button id since the first button element has an id and not a class attribute */
+#confirm-button { 
   background: green;
   color: white;
   font-weight: bold;
@@ -29,14 +31,16 @@ body {
   font-size: 20px;
 }
 
+/* changed from div.text to .text */
+.text {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 100;
+}
+
+/* moved from above .text selector so that the rules defined here apply to the last div element instead of the rules defined under the .text selector (which has the same level of specificity) */
 .child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
-}
-
-div.text {
-  color: rgb(0, 0, 0);
-  font-size: 22px;
-  font-weight: 100;
 }
