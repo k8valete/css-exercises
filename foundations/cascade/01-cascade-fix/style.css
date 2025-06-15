@@ -13,6 +13,7 @@ body {
   font-size: 22px;
 }
 
+/* ALTERNATIVE SOLUTION: if I kept this in its original place but chained selectors (e.g., p.small-para), giving this rule a higher specificity */
 .small-para {
   font-size: 14px;
   font-weight: 800;
