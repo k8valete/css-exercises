@@ -9,7 +9,7 @@ body {
   /* this aligns the header, content, and footer vertically */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 img {
@@ -23,6 +23,9 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+
+  /* addition */
+  padding: 8px 16px;
 }
 
 input {
@@ -41,31 +44,46 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  /* I could've made this a flex container instead of the left-links and right-links (now removed) */
+  display: flex;
 }
 
 a {
   /* searched this on Google */
   text-decoration: none;
   color: rgb(113, 113, 113);
+  /* same as solution! :) */
 }
 
-.header, .footer, .left-links, .right-links, .content {
+/* moved the display property to respective selectors 
+.header, .footer, .content {
   display: flex;
 }
+*/
 
-.header, .footer {
+/* previously styled left-links and right-links here */
+.header, .footer { 
+  display: flex;
   padding: 16px;
   justify-content: space-between;
 }
 
 .content {
+  display: flex;
+  /* the solution actually contains the property-value of flex: 1 instead of using justify-content: space-between in the body (what I did) */
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  /*  */
+  flex: 1; 
+  /* expands to flex: 1 1 0 */
 }
 
+/* there's already a button selector, so I can just move this property up there 
 .buttons button {
   padding: 8px;
 }
+*/
 
 .left-links, .right-links {
   gap: 16px;
