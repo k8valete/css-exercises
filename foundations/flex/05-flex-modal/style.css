@@ -17,11 +17,6 @@ body {
 
 /* Note: I didn't see the freebie at the top lol */
 
-.header {
-  font-weight: bold;
-  font-size: larger;
-}
-
 .modal {
   background: white;
   width: 480px;
@@ -32,6 +27,7 @@ body {
   display: flex;
   padding: 16px;
   gap: 16px;
+  /* solution did the same! :) */
 }
 
 .icon {
@@ -48,6 +44,7 @@ body {
   
   /* my additions below */
   flex-shrink: 0;
+  /* solution did the same! :) */
 }
 
 .close-button {
@@ -65,16 +62,29 @@ body {
   padding: 0;
 }
 
+.header {
+  font-weight: bold;
+  font-size: larger;
+}
+
 /* additions below */
 .top {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* in the solution which moved the button into the header div, the same three properties were used */
 }
 
+/* alternatively, could've done 
+.text {
+  margin-bottom: 16px;
+}
+and add the same property to the .header class
+*/
 .right-of-icon > * {
   margin: 8px 0;
 }
+
 
 button {
   cursor: pointer;
