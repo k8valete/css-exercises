@@ -46,6 +46,7 @@ ul {
   padding: 0;
   /* I could've made this a flex container instead of the left-links and right-links (now removed) */
   display: flex;
+  gap: 16px;
 }
 
 a {
@@ -85,9 +86,11 @@ a {
 }
 */
 
+/* this is redundant, can put in ul selector
 .left-links, .right-links {
   gap: 16px;
 }
+*/
 
 .footer {
   background-color: #eeeeee;
